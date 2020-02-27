@@ -1,0 +1,16 @@
+version: '3'
+services:
+  sipp:
+      image: ctaloi/sipp:latest
+      container_name: sipp
+      ports:
+          - "5060:5060"
+      volumes:
+        - /etc/timezone:/etc/timezone:ro
+        - /etc/localtime:/etc/localtime:ro
+        - .:/sipp
+      env_file:
+          - .env
+      entrypoint: /bin/bash -c "tail -F /var/log/*.log"
+      #command: >
+      #    bash -c "tail -F /var/log/*.log"

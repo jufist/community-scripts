@@ -1,0 +1,1 @@
+rsync -ravz -L ../community-scripts fs-hcm-01.sv.antbuddy.com:/etc/antbuddy/tools
