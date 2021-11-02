@@ -1,4 +1,8 @@
 *.beam
 *.app
 CloneTools/db_clone
-*/*.log
+*.log
+*.old.sh
+.env
+users.csv
+>>>>>>> Some more tools

@@ -1,0 +1,3 @@
+[submodule "sipp/docker-sipp"]
+	path = sipp/docker-sipp
+	url = https://github.com/ctaloi/docker-sipp.git
